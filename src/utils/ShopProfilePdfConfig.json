@@ -1,0 +1,555 @@
+[
+    {
+        "id": "1a523ad4-682e-4db2-af49-d54f176a84ad",
+        "shop_code_id": "01HQ0010",
+        "shop_config": {
+            "config_pdf": {
+                "show_tax": {
+                    "isuse": true
+                },
+                "customer_tel": {
+                    "isuse": false
+                },
+                "vehicle_right": {
+                    "isuse": true
+                },
+                "under_title": {
+                    "isuse": false
+                },
+                "background_color_total_price": {
+                    "isuse": false
+                },
+                "table_horizontal_line": {
+                    "isuse": false
+                },
+                "use_sign_date": [
+                    {
+                        "isuse": true
+                    },
+                    {
+                        "isuse": true
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "bdc9345d-00c2-4ed8-8cf8-72258c1611cf",
+        "shop_code_id": "01HQ0002",
+        "shop_config": {
+            "config_pdf": {
+                "shop_tax_id": {
+                    "isuse": true
+                },
+                "customer_tel": {
+                    "isuse": true
+                },
+                "vehicle_right": {
+                    "isuse": true
+                },
+                "use_sign_date": [
+                    {
+                        "isuse": true
+                    },
+                    {
+                        "isuse": true
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "6280a752-0e9d-48d3-bea8-b5ac0229a52f",
+        "shop_code_id": "01HQ0001",
+        "shop_config": {
+            "config_pdf": {}
+        }
+    },
+    {
+        "id": "80465c1c-2868-45c4-97c5-54ac57cb1595",
+        "shop_code_id": "01HQ0008",
+        "shop_config": {
+            "config_pdf": {}
+        }
+    },
+    {
+        "id": "3dd7593e-8394-4ee2-800f-0ab1771be7fc",
+        "shop_code_id": "01HQ0005",
+        "shop_config": {
+            "config_pdf": {}
+        }
+    },
+    {
+        "id": "476897c2-bb81-4b6c-a623-2be3c7997ddd",
+        "shop_code_id": "01HQ0009",
+        "shop_config": {
+            "config_pdf": {
+                "repair_doc": {
+                    "description": "ใบส่งสินค้าใบ/ใบแจ้งหนี้",
+                    "attribute": [
+                        "use_template"
+                    ],
+                    "use_template": {
+                        "value": true,
+                        "description": "ใช้เทมเพลต",
+                        "attribute": [
+                            "which_templte_number"
+                        ],
+                        "which_templte_number": {
+                            "value": 3,
+                            "description": "เทมเพลตของร้านรุ่งไทย",
+                            "attribute": []
+                        }
+                    }
+                },
+                "full_tax_invoice": {
+                    "description": "ใบกำกำกับภาษีเต็มรูป",
+                    "attribute": [
+                        "use_template"
+                    ],
+                    "use_template": {
+                        "value": true,
+                        "description": "ใช้เทมเพลต",
+                        "attribute": [
+                            "which_templte_number"
+                        ],
+                        "which_templte_number": {
+                            "value": 3,
+                            "description": "เทมเพลตของร้านรุ่งไทย",
+                            "attribute": []
+                        }
+                    }
+                },
+                "delivery_doc": {
+                    "description": "ใบส่งสินค้าใบ/ใบแจ้งหนี้",
+                    "attribute": [
+                        "use_template"
+                    ],
+                    "use_template": {
+                        "value": true,
+                        "description": "ใช้เทมเพลต",
+                        "attribute": [
+                            "which_templte_number"
+                        ],
+                        "which_templte_number": {
+                            "value": 3,
+                            "description": "เทมเพลตของร้านรุ่งไทย",
+                            "attribute": []
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "id": "476897c2-bb81-4b6c-a623-2be3c7997ddd",
+        "shop_code_id": "01HQ0019",
+        "shop_config": {
+            "config_pdf": {
+                "repair_doc": {
+                    "description": "ใบส่งสินค้าใบ/ใบแจ้งหนี้",
+                    "attribute": [
+                        "use_template"
+                    ],
+                    "use_template": {
+                        "value": true,
+                        "description": "ใช้เทมเพลต",
+                        "attribute": [
+                            "which_templte_number"
+                        ],
+                        "which_templte_number": {
+                            "value": 4,
+                            "description": "เทมเพลตของร้าน STV",
+                            "attribute": []
+                        }
+                    }
+                },
+                "full_tax_invoice": {
+                    "description": "ใบกำกำกับภาษีเต็มรูป",
+                    "attribute": [
+                        "use_template"
+                    ],
+                    "use_template": {
+                        "value": true,
+                        "description": "ใช้เทมเพลต",
+                        "attribute": [
+                            "which_templte_number"
+                        ],
+                        "which_templte_number": {
+                            "value": 4,
+                            "description": "เทมเพลตของร้าน STV",
+                            "attribute": []
+                        }
+                    }
+                },
+                "delivery_doc": {
+                    "description": "ใบส่งสินค้าใบ/ใบแจ้งหนี้",
+                    "attribute": [
+                        "use_template"
+                    ],
+                    "use_template": {
+                        "value": true,
+                        "description": "ใช้เทมเพลต",
+                        "attribute": [
+                            "which_templte_number"
+                        ],
+                        "which_templte_number": {
+                            "value": 4,
+                            "description": "เทมเพลตของร้าน STV",
+                            "attribute": []
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "id": "d36e6547-0c35-44c3-be44-9b7d8d68e99d",
+        "shop_code_id": "01HQ0007",
+        "shop_config": {
+            "config_pdf": {}
+        }
+    },
+    {
+        "id": "264777cf-5229-4048-b92f-abeb0361ff07",
+        "shop_code_id": "01HQ0012",
+        "shop_config": {
+            "config_pdf": {
+                "custom_page_height": {
+                    "isuse": true,
+                    "value": 11
+                },
+                "use_sign_date": [
+                    {
+                        "isuse": false
+                    },
+                    {
+                        "isuse": false
+                    }
+                ],
+                "font_customer_size": {
+                    "isuse": true,
+                    "value": 13
+                },
+                "font_vehicle_size": {
+                    "isuse": true,
+                    "value": 13
+                },
+                "font_price_size": {
+                    "isuse": true,
+                    "value": 13
+                },
+                "show_tax": {
+                    "isuse": false
+                },
+                "customer_tel": {
+                    "isuse": true
+                },
+                "header_table_color": "white",
+                "header_font_color": "black",
+                "font_primary_color": "black",
+                "total_price_color_background": {
+                    "isuse": false
+                },
+                "vehicle_right": {
+                    "isuse": true,
+                    "chassis_number_show": {
+                        "isuse": false
+                    }
+                },
+                "page_number": {
+                    "isuse": true
+                },
+                "copy_page": {
+                    "isuse": false
+                },
+                "under_title": {
+                    "isuse": false
+                },
+                "repair_man_show": {
+                    "isuse": false
+                },
+                "seller_show": {
+                    "isuse": false
+                },
+                "bank_show": {
+                    "value": 2,
+                    "isuse": true,
+                    "when_doc_type_name_include_keyword_1": {
+                        "keyword": "กำกับภาษี",
+                        "isuse": true
+                    },
+                    "account_number": {
+                        "isuse": true,
+                        "value": "088-1-79394-5"
+                    },
+                    "bank_name": {
+                        "isuse": true,
+                        "value": "ธ.กรุงศรีอยุธยา"
+                    },
+                    "account_name": {
+                        "isuse": true,
+                        "value": "บจ.วิโรจน์ วีล แอนด์ ไทร์"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "id": "6471a29a-76c6-43eb-b805-169b605daf42",
+        "shop_code_id": "01HQ0014",
+        "shop_config": {
+            "config_pdf": {}
+        }
+    },
+    {
+        "id": "d06b37c8-5115-452a-8f78-dc9fbf53b202",
+        "shop_code_id": "01HQ0011",
+        "shop_config": {
+            "config_pdf": {
+                "show_tax": {
+                    "isuse": false
+                },
+                "custom_page_width": {
+                    "isuse": false,
+                    "value": 9
+                },
+                "custom_page_height": {
+                    "isuse": true,
+                    "value": 11
+                },
+                "use_sign_date": [
+                    {
+                        "isuse": false
+                    },
+                    {
+                        "isuse": false
+                    }
+                ],
+                "font_customer_size": {
+                    "isuse": true,
+                    "value": 13
+                },
+                "font_vehicle_size": {
+                    "isuse": true,
+                    "value": 13
+                },
+                "font_price_size": {
+                    "isuse": true,
+                    "value": 13
+                },
+                "customer_tel": {
+                    "isuse": true
+                },
+                "header_table_color": "white",
+                "header_font_color": "black",
+                "font_primary_color": "black",
+                "total_price_color_background": {
+                    "isuse": false
+                },
+                "vehicle_right": {
+                    "isuse": true,
+                    "chassis_number_show": {
+                        "isuse": false
+                    }
+                },
+                "page_number": {
+                    "isuse": true
+                },
+                "copy_page": {
+                    "isuse": false
+                },
+                "under_title": {
+                    "isuse": false
+                },
+                "repair_man_show": {
+                    "isuse": false
+                },
+                "seller_show": {
+                    "isuse": false
+                },
+                "bank_show": {
+                    "value": 2,
+                    "isuse": true,
+                    "when_doc_type_name_include_keyword_1": {
+                        "keyword": "กำกับภาษี",
+                        "isuse": true
+                    },
+                    "account_number": {
+                        "isuse": true,
+                        "value": "088-1-79394-5"
+                    },
+                    "bank_name": {
+                        "isuse": true,
+                        "value": "ธ.กรุงศรีอยุธยา"
+                    },
+                    "account_name": {
+                        "isuse": true,
+                        "value": "บจ.วิโรจน์ วีล แอนด์ ไทร์"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "id": "d53c5ead-bc70-4952-b0fe-c171ccbc9cd0",
+        "shop_code_id": "01HQ0004",
+        "shop_config": {
+            "config_pdf": {}
+        }
+    },
+    {
+        "id": "d7811c98-c730-46d7-a779-077e0acc1dad",
+        "shop_code_id": "01HQ0006",
+        "shop_config": {
+            "config_pdf": {}
+        }
+    },
+    {
+        "id": "f53c22c4-e524-442e-b8bc-2001b3f3621b",
+        "shop_code_id": "01HQ0003",
+        "shop_config": {
+            "config_pdf": {}
+        }
+    },
+    {
+        "id": "218660de-50d9-4175-a976-10ff2c00152e",
+        "shop_code_id": "01HQ0013",
+        "shop_config": {
+            "config_pdf": {
+                "template": {
+                    "isuse": true,
+                    "value": 1
+                },
+                "vehicle_right": {
+                    "isuse": true
+                },
+                "show_tax": {
+                    "isuse": true
+                }
+            }
+        }
+    },
+    {
+        "id": "5cc9b918-ece2-4be2-b824-f7e636f44c41",
+        "shop_code_id": "01HQ0015",
+        "shop_config": {
+            "config_pdf": {
+                "repair_doc": {
+                    "description": "ใบส่งสินค้าใบ/ใบแจ้งหนี้",
+                    "attribute": [
+                        "do_show",
+                        "payment_show",
+                        "mileage_show",
+                        "foot1",
+                        "foot3"
+                    ],
+                    "dot_show": {
+                        "value": true,
+                        "description": "โชว์ dot"
+                    },
+                    "payment_show": {
+                        "value": true
+                    },
+                    "mileage_show": {
+                        "value": true
+                    },
+                    "foot1": {
+                        "value": "ผู้เปิดเอกสาร/รับเงิน"
+                    },
+                    "foot3": {
+                        "value": "ผู้ส่งสินค้า/บริการ"
+                    }
+                },
+                "full_tax_invoice": {
+                    "description": "ใบกำกำกับภาษีเต็มรูป",
+                    "attribute": [
+                        "due_date_show",
+                        "foot1",
+                        "foot2",
+                        "foot3",
+                        "foot4"
+                    ],
+                    "due_date_show": {
+                        "value": true,
+                        "description": "โชว์ วันครบกำหนดชำระ"
+                    },
+                    "foot1": {
+                        "value": "ผู้เปิดเอกสาร"
+                    },
+                    "foot2": {
+                        "value": "ผู้ตรวจสอบ"
+                    },
+                    "foot3": {
+                        "value": "ผู้จัดส่งสินค้า"
+                    },
+                    "foot4": {
+                        "value": "วันที่"
+                    }
+                },
+                "delivery_doc": {
+                    "description": "ใบส่งสินค้าใบ/ใบแจ้งหนี้",
+                    "attribute": [
+                        "dot_show",
+                        "warehouse_show",
+                        "due_date_show",
+                        "foot1",
+                        "foot2",
+                        "foot3",
+                        "foot4"
+                    ],
+                    "dot_show": {
+                        "value": true,
+                        "description": "โชว์ dot"
+                    },
+                    "warehouse_show": {
+                        "value": true
+                    },
+                    "due_date_show": {
+                        "value": true,
+                        "description": "โชว์ วันครบกำหนดชำระ"
+                    },
+                    "foot1": {
+                        "value": "ผู้เปิดเอกสาร"
+                    },
+                    "foot2": {
+                        "value": "ผู้ตรวจสอบ"
+                    },
+                    "foot3": {
+                        "value": "ผู้จัดส่งสินค้า"
+                    },
+                    "foot4": {
+                        "value": "ผู้รับสินค้า วันที่"
+                    }
+                },
+                "import_stock": {
+                    "description": "ใบนำเข้า",
+                    "attribute": [
+                        "do_show"
+                    ],
+                    "dot_show": {
+                        "value": true,
+                        "description": "โชว์ dot"
+                    }
+                },
+                "quotation_doc": {
+                    "description": "ใบเสนอราคา",
+                    "attribute": [
+                        "due_date_amount_show",
+                        "foot1",
+                        "foot3"
+                    ],
+                    "due_date_amount_show": {
+                        "value": true
+                    },
+                    "foot1": {
+                        "value": "ผู้เสนอราคา"
+                    },
+                    "foot3": {
+                        "value": "ผู้สั่งซื้อสินค้า"
+                    }
+                }
+            }
+        }
+    }
+]

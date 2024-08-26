@@ -1,0 +1,22 @@
+server {
+
+	# SSL configuration
+	#
+	listen 443 ssl;
+	listen [::]:443 ssl;
+
+	include snippets/snakeoil.conf;
+
+	root /var/www/html/frontend/out;
+
+	index index.html index.htm index.nginx-debian.html;
+
+	server_name example.carserviceerp.com;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+
+    ssl_certificate /etc/letsencrypt/live/carserviceerp.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/carserviceerp.com/privkey.pem; # managed by Certbot
+}

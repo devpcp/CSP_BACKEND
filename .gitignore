@@ -1,0 +1,8 @@
+node_modules
+.env
+.env.example
+.idea
+src/assets
+.vscode
+src/configs/nginx/*.config.nginx
+local-test.js

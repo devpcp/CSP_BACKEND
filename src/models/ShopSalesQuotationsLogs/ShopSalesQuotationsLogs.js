@@ -1,0 +1,133 @@
+/**
+ * A function do dynamics table of model ShopSalesQuotationsLogs
+ * @param {string} table_name - Dynamics table's name of "dat_${table_name}_sales_quotations_logs"
+ * @return An instance of model ShopSalesQuotationsLogs by sequelize
+ */
+const ShopSalesQuotationsLogs = (table_name = "") => {
+    if (!table_name) { throw Error(`Require parameter "table_name"`); }
+    else {
+        table_name = table_name.toLowerCase();
+
+        const Model = require("sequelize").Model;
+        const { DataTypes, literal } = require("sequelize");
+
+        const db = require("../../db");
+
+        const modelUsers = require("../model").User;
+        const modelShopProfiles = require("../model").ShopsProfiles;
+        const modelShopProducts = require("../model").ShopProduct(table_name);
+        const modelShopSalesTransactionDoc = require("../model").ShopSalesTransactionDoc(table_name);
+
+        class ShopSalesQuotationsLogs extends Model { }
+
+        ShopSalesQuotationsLogs.init({
+            id: {
+                type: DataTypes.UUID,
+                defaultValue: literal(`uuid_generate_v4()`),
+                allowNull: false,
+                primaryKey: true,
+                comment: `รหัสหลักตารางข้อมูลรายการสินค้าที่นำเสนอราคา`
+            },
+            shop_id: {
+                type: DataTypes.UUID,
+                allowNull: false,
+                references: {
+                    model: modelShopProfiles,
+                    key: 'id'
+                },
+                comment: `รหัสตารางข้อมูลร้านค้า`
+            },
+            product_id: {
+                type: DataTypes.UUID,
+                allowNull: false,
+                references: {
+                    model: modelShopProducts,
+                    key: 'id'
+                },
+                comment: `รหัสตารางข้อมูลสินค้า`
+            },
+            amount: {
+                type: DataTypes.BIGINT,
+                allowNull: false,
+                comment: `จำนวนรวมสินค้าที่เสนอราคา`
+            },
+            doc_sale_id: {
+                type: DataTypes.UUID,
+                allowNull: false,
+                references: {
+                    model: modelShopSalesTransactionDoc,
+                    key: 'id'
+                },
+                comment: `รหัสหลักตารางข้อมูลเอกสาร`
+            },
+            details: {
+                type: DataTypes.JSON,
+                allowNull: false,
+                comment: 'รายละเอียดข้อมูลสินค้าที่เสนอขาย\n' +
+                    'Ex.\n' +
+                    '{\n' +
+                    '  "price":"1000",\n' +
+                    '  "discount_percentage_1":"2",\n' +
+                    '  "discount_percentage_2":"0",\n' +
+                    '  "discount_thb":"980"\n' +
+                    '}'
+            },
+            status: {
+                type: DataTypes.SMALLINT,
+                allowNull: false,
+                defaultValue: literal(`1`),
+                validate: {
+                    isIn: [[0, 1, 2]]
+                },
+                comment: `สถานะเอกสาร 0 = ยกเลิก, 1 = รอเสนอราคา, 2 = ส่งเสนอราคาลูกค้าเรียบร้อย, 3 = ลูกค้าอนุมัติซื้อ`
+            },
+            created_by: {
+                type: DataTypes.UUID,
+                allowNull: false,
+                references: {
+                    model: modelUsers,
+                    key: 'id'
+                },
+                comment: `สร้างข้อมูลโดย`
+            },
+            created_date: {
+                type: DataTypes.DATE,
+                allowNull: false,
+                defaultValue: literal(`now()`),
+                comment: `สร้างข้อมูลวันที่`
+            },
+            updated_by: {
+                type: DataTypes.UUID,
+                allowNull: true,
+                references: {
+                    model: modelUsers,
+                    key: 'id'
+                },
+                comment: `ปรับปรุงข้อมูลโดย`
+            },
+            updated_date: {
+                type: DataTypes.DATE,
+                allowNull: true,
+                defaultValue: null,
+                comment: `ปรับปรุงข้อมูลวันที่`
+            },
+        }, {
+            sequelize: db,
+            modelName: 'ShopSalesQuotationsLogs',
+            schema: 'app_shops_datas',
+            tableName: `dat_${table_name}_sales_quotations_logs`,
+            comment: 'ตารางข้อมูลรายการสินค้าที่นำเสนอราคา บันทึกเป็น Logs',
+            timestamps: false,
+        });
+
+        ShopSalesQuotationsLogs.belongsTo(modelShopProfiles, { foreignKey: 'shop_id', as: 'ShopsProfiles' });
+        ShopSalesQuotationsLogs.belongsTo(modelShopProducts, { foreignKey: 'product_id', as: 'ShopProducts' });
+        ShopSalesQuotationsLogs.belongsTo(modelShopSalesTransactionDoc, { foreignKey: 'doc_sale_id', as: 'ShopSalesTransactionDoc' });
+        ShopSalesQuotationsLogs.belongsTo(modelUsers, { foreignKey: 'created_by' });
+        ShopSalesQuotationsLogs.belongsTo(modelUsers, { foreignKey: 'updated_by' });
+
+        return ShopSalesQuotationsLogs;
+    }
+};
+
+module.exports = ShopSalesQuotationsLogs;
